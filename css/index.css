@@ -1,3 +1,194 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+.wrapper {
+    width: 880px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
 
 
+/* ********************* HEADER OF THE PAGE *********************** */
+
+header {
+    display: flex;
+    margin-top: 5%;
+}
+
+header nav {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #a3a09f;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* ********************* TOP MAIN PART OF THE PAGE *********************** */
+
+.top-main {
+    display: flex;
+    justify-content: center;
+    margin: 8% 0;
+}
+
+.top-text {
+    text-align: center;
+    width: 48%;
+}
+
+.top-text h1 {
+    font-size: 390%;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 4px;
+}
+
+.top-text button {
+    color: black;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 2% 14%;
+    transition: 0.5s;
+}
+
+.top-text button:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    padding: 3% 16%;
+}
+
+hr {
+    border: 1px solid black;
+    width: 100%;
+}
+
+/* ********************* MAIN INFO PART OF THR PAGE *************************/
+
+.main-info h3 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.main-info p {
+    padding: 2%;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+}
+
+/* ********************** CONTACT OF THE PAGE **************************** */
+
+.contact h3 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+/* ************************ FOOTER OF THE PAGE **************************** */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* ********************** MEDIA QUERIES FOR TABLAT ******************** */
+
+@media screen and (max-width: 800px) {
+
+    /* ************ HEADER OF THE PAGE ********* */
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header a img {
+        margin-left: 40%;
+    }
+
+    header nav {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+
+
+    /* ********** MAIN INFO OF THE PAGE ********** */
+    .top-main img {
+        display: none;
+    }
+
+    .main-info img {
+        width: 100%;
+    }
+
+    .top-info {
+        width: 90%;
+    }
+
+}
+
+
+/* ********************** MEDIA QUERIES FOR PHONE ******************** */
+
+@media screen and (max-width: 500px) {
+
+    /* ************ HEADER OF THE PAGE ********* */
+    header nav {
+        flex-direction: column;
+    }
+
+    header a img {
+        margin-left: 30%;
+    }
+
+
+    header nav a {
+        font-size: 145%;
+        padding: 4% 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    /* ********** MAIN INFO OF THE PAGE ********** */
+
+    .main-info img {
+        width: 100%;
+    }
+
+    .top-info {
+        flex-direction: column;
+    }
+
+    .bottom-info {
+        flex-direction: column;
+    }
+
+}
